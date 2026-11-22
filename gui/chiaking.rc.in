@@ -23,12 +23,12 @@ BEGIN
         BEGIN
             VALUE "Comments", "Community PlayStation Remote Play client"
             VALUE "CompanyName", "Stret Pea"
-            VALUE "FileDescription", "PS5 Remoto - PlayStation Remote Play Client"
+            VALUE "FileDescription", "NitroPlay - PlayStation Remote Play Client"
             VALUE "FileVersion", VER_FILEVERSION_STR
             VALUE "InternalName", "chiaki-ng"
             VALUE "LegalCopyright", "AGPLv3 Stret Pea 2022"
             VALUE "OriginalFilename", "chiaki.exe"
-            VALUE "ProductName", "PS5 Remoto"
+            VALUE "ProductName", "NitroPlay"
             VALUE "ProductVersion", VER_PRODUCTVERSION_STR
         END
     END

@@ -3175,17 +3175,18 @@ DialogView {
                     Layout.preferredWidth: 400
                     verticalAlignment: Text.AlignTop
                     wrapMode: Text.Wrap
-                    text: "<h1>chiaki-ng</h1> by Street Pea, version %1
-                        <h2>Fork of Chiaki</h2> by Florian Markl at version 2.1.1
+                    text: "<h1>NitroPlay</h1>
+                        <p>Versión %1, basado en chiaki-ng de Street Pea.</p>
+                        <p>Chiaki original de Florian Märkl (versión 2.1.1).</p>
 
-                        <p>This program is free software: you can redistribute it and/or modify
-                        it under the terms of the GNU Affero General Public License version 3
-                        as published by the Free Software Foundation.</p>
+                        <p>Este programa es software libre: puedes redistribuirlo y/o modificarlo
+                        bajo los términos de la GNU Affero General Public License versión 3
+                        publicada por la Free Software Foundation.</p>
 
-                        <p>This program is distributed in the hope that it will be useful,
-                        but WITHOUT ANY WARRANTY; without even the implied warranty of
-                        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-                        GNU General Public License for more details.</p>".arg(Qt.application.version)
+                        <p>Este programa se distribuye con la esperanza de que sea útil,
+                        pero SIN NINGUNA GARANTÍA; ni siquiera la garantía implícita de
+                        COMERCIABILIDAD o IDONEIDAD PARA UN FIN PARTICULAR. Consulta
+                        la GNU Affero General Public License para más detalles.</p>".arg(Qt.application.version)
                 }
             }
         }

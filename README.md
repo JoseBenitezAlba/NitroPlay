@@ -4,7 +4,7 @@
 
 <h1 align="center">NitroPlay</h1>
 
-<p align="center"><strong>PS5 Remoto.</strong> Juega a tu PlayStation 4 o PlayStation 5 a distancia, en español y con nitidez ajustable.</p>
+<p align="center">Juega a tu PlayStation 4 o PlayStation 5 a distancia, en español y con nitidez ajustable.</p>
 
 <p align="center">
   <a href="COPYING"><img src="https://img.shields.io/github/license/pilahito/NitroPlay?label=licencia" alt="Licencia AGPL-3.0"></a>
@@ -16,20 +16,19 @@
 
 NitroPlay es un cliente comunitario de juego remoto para PlayStation 4 y PlayStation 5, basado en [chiaki-ng](https://github.com/chiaki-ng/chiaki-ng). Este repositorio reúne una interfaz en español, un control de nitidez y temas visuales inspirados en PlayStation.
 
-En la aplicación, el nombre visible es **PS5 Remoto**.
 
 ## Novedades frente a chiaki-ng
 
 - **Nitidez ajustable** en Configuración → Vídeo, con los niveles Apagado, Baja, Media y Alta.
 - **Interfaz en español.**
-- **30 estilos visuales:** 29 temas y el estilo original de chiaki-ng.
+- **30 estilos visuales:** 29 temas y el estilo NitroPlay original.
 - **Fondos ilustrados** que solo aparecen en el menú de consolas (y en una vista previa al elegir el tema). No cubren la transmisión.
 
 Los temas disponibles son:
 
 - **Consolas:** PS5 clásico, PS4, PlayStation 3, PlayStation 2 y PlayStation 1 - clásico.
 - **Juegos:** Marvel's Spider-Man, God of War, Horizon, The Last of Us, Ghost of Tsushima, Astro Bot, Gran Turismo, Ratchet & Clank, Returnal, Uncharted, Bloodborne, Demon's Souls, Death Stranding, Crash Bandicoot, Spyro the Dragon, Metal Gear Solid, Final Fantasy VII, Tekken 3, Shadow of the Colossus, ICO, LittleBigPlanet, inFAMOUS, Killzone y Sackboy: A Big Adventure.
-- **Original:** chiaki-ng.
+- **Original:** NitroPlay original.
 
 Se eligen en **Configuración → General → Tema**. La elección se guarda para el siguiente inicio.
 

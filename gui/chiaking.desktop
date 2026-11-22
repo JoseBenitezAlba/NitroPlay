@@ -1,7 +1,9 @@
 [Desktop Entry]
 Type=Application
-Name=PS5 Remoto
-Comment=Cliente de juego remoto para PlayStation
+Name=NitroPlay
+Comment=Cliente de juego remoto para PlayStation, basado en chiaki-ng
 Exec=chiaki
 Icon=chiaking
 Categories=Game;Network;RemoteAccess;
+StartupWMClass=chiaking
+Terminal=false

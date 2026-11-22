@@ -337,8 +337,8 @@
     <name>Main</name>
     <message>
         <location filename="../src/qml/Main.qml" line="17" />
-        <source>chiaki-ng (original)</source>
-        <translation>chiaki-ng (original)</translation>
+        <source>NitroPlay original</source>
+        <translation>NitroPlay original</translation>
     </message>
     <message>
         <location filename="../src/qml/Main.qml" line="18" />
@@ -387,10 +387,10 @@
     </message>
     <message>
         <location filename="../src/qml/Main.qml" line="196" />
-        <source>Vulkan renderer is unavailable and chiaki-ng switched to OpenGL.
+        <source>Vulkan renderer is unavailable and NitroPlay switched to OpenGL.
 
 Reason: %1</source>
-        <translation>El renderizador Vulkan no está disponible y chiaki-ng cambió a OpenGL.
+        <translation>El renderizador Vulkan no está disponible y NitroPlay cambió a OpenGL.
 
 Razón: %1</translation>
     </message>
@@ -425,9 +425,9 @@ Razón: %1</translation>
     </message>
     <message>
         <location filename="../src/qml/MainView.qml" line="17" />
-        <source>Would you like to either create a new non-Steam game for chiaki-ng
+        <source>Would you like to either create a new non-Steam game for NitroPlay
 or update an existing non-Steam game with the official artwork and controller layout?</source>
-        <translation>¿Te gustaría crear un nuevo juego no de Steam para chiaki-ng
+        <translation>¿Te gustaría crear un nuevo juego no de Steam para NitroPlay
 o actualizar un juego no de Steam existente con el arte oficial y la disposición del controlador?</translation>
     </message>
     <message>
@@ -1820,13 +1820,13 @@ Esto habilita:
     </message>
     <message>
         <location filename="../src/qml/PsnView.qml" line="184" />
-        <source>Registering PlayStation console with chiaki-ng ...</source>
-        <translation>Registrando consola PlayStation con chiaki-ng ...</translation>
+        <source>Registering PlayStation console with NitroPlay ...</source>
+        <translation>Registrando consola PlayStation con NitroPlay ...</translation>
     </message>
     <message>
         <location filename="../src/qml/PsnView.qml" line="184" />
-        <source>Linking chiaki-ng with PlayStation console ...</source>
-        <translation>Vinculando chiaki-ng con la consola PlayStation ...</translation>
+        <source>Linking NitroPlay with PlayStation console ...</source>
+        <translation>Vinculando NitroPlay con la consola PlayStation ...</translation>
     </message>
     <message>
         <location filename="../src/qml/PsnView.qml" line="191" />

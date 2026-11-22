@@ -14,7 +14,7 @@ Item {
     property bool useSeparateStreamSettingsWindows: false
     // Temas inspirados en PlayStation y sus juegos; se elige en Ajustes > General
     readonly property var themes: ({
-        "chiaki":   { name: qsTr("chiaki-ng (original)"), accent: "#00a7ff", background: "#303030", primary: "#00a7ff" },
+        "chiaki":   { name: qsTr("NitroPlay original"), accent: "#00a7ff", background: "#303030", primary: "#00a7ff" },
         "ps5":      { name: qsTr("PS5 clásico"),          accent: "#53b5ff", background: "#0b0d12", primary: "#17243a" },
         "ps4":      { name: qsTr("PS4"),                  accent: "#00a7ff", background: "#0a1f44", primary: "#2e6db4" },
         "gow":      { name: qsTr("God of War"),           accent: "#ee5266", background: "#160909", primary: "#39232a" },
@@ -215,7 +215,7 @@ Item {
 
     function showRendererFallbackDialog(reason) {
         showInfoDialog(qsTr("Renderer Fallback"),
-                       qsTr("Vulkan renderer is unavailable and chiaki-ng switched to OpenGL.\n\nReason: %1").arg(reason));
+                       qsTr("Vulkan renderer is unavailable and NitroPlay switched to OpenGL.\n\nReason: %1").arg(reason));
     }
 
     function showRemindDialog(title, text, remotePlay, callback) {

@@ -1,8 +1,7 @@
 # NitroPlay
 
-**PS5 Remoto.** Cliente comunitario de juego remoto para PlayStation 4 y PlayStation 5, basado en chiaki-ng. Incluye la interfaz en español, nitidez ajustable en Configuración → Vídeo y 30 estilos visuales: 29 temas y el estilo original.
+Cliente comunitario de juego remoto para PlayStation 4 y PlayStation 5, basado en chiaki-ng. Incluye la interfaz en español, nitidez ajustable en Configuración → Vídeo y 30 estilos visuales: 29 temas y el estilo NitroPlay original.
 
-En la aplicación, el nombre visible es **PS5 Remoto**.
 
 ## Temas
 
@@ -10,7 +9,7 @@ En la aplicación, el nombre visible es **PS5 Remoto**.
 
 **Juegos:** Marvel's Spider-Man, God of War, Horizon, The Last of Us, Ghost of Tsushima, Astro Bot, Gran Turismo, Ratchet & Clank, Returnal, Uncharted, Bloodborne, Demon's Souls, Death Stranding, Crash Bandicoot, Spyro the Dragon, Metal Gear Solid, Final Fantasy VII, Tekken 3, Shadow of the Colossus, ICO, LittleBigPlanet, inFAMOUS, Killzone y Sackboy: A Big Adventure.
 
-**Original:** chiaki-ng.
+**Original:** NitroPlay original.
 
 En **Configuración → General → Tema** puedes previsualizar y elegir un estilo. La elección se guarda para el siguiente inicio. Los motivos ilustrados son propios, están inspirados en cada juego y solo aparecen en el menú de consolas; no cubren la transmisión.
 
