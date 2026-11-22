@@ -29,9 +29,23 @@ Item {
         "uncharted":{ name: "Uncharted",                 accent: "#e8c17e", background: "#18150c", primary: "#3a3020" },
         "bloodborne":{name: "Bloodborne",                accent: "#df9b9c", background: "#100e18", primary: "#302332" },
         "demons":   { name: "Demon's Souls",             accent: "#9bc5e8", background: "#0b131c", primary: "#203141" },
-        "stranding":{ name: "Death Stranding",           accent: "#a4d9e8", background: "#10181d", primary: "#273941" }
+        "stranding":{ name: "Death Stranding",           accent: "#a4d9e8", background: "#10181d", primary: "#273941" },
+        "ps1":      { name: qsTr("PlayStation 1 - cl\u00e1sico"), accent: "#ff9b55", background: "#1b1113", primary: "#48232b" },
+        "ps2":      { name: "PlayStation 2",               accent: "#78aaff", background: "#080e1b", primary: "#172b4d" },
+        "ps3":      { name: "PlayStation 3",               accent: "#8de7ff", background: "#08151d", primary: "#16445c" },
+        "crash":    { name: "Crash Bandicoot",             accent: "#ffad45", background: "#24140a", primary: "#713522" },
+        "spyro":    { name: "Spyro the Dragon",             accent: "#d2a0ff", background: "#160f2d", primary: "#37245b" },
+        "mgs":      { name: "Metal Gear Solid",             accent: "#d3e2dc", background: "#10191a", primary: "#2c3a36" },
+        "ff7":      { name: "Final Fantasy VII",             accent: "#70e7c2", background: "#081a20", primary: "#17434a" },
+        "tekken3":  { name: "Tekken 3",                     accent: "#ff7272", background: "#1b0e12", primary: "#54212b" },
+        "shadow":   { name: "Shadow of the Colossus",       accent: "#d9c49b", background: "#161712", primary: "#443c2e" },
+        "ico":      { name: "ICO",                          accent: "#b7d6c6", background: "#10191b", primary: "#244441" },
+        "lbp":      { name: "LittleBigPlanet",              accent: "#ffc47b", background: "#21160e", primary: "#5c3a24" },
+        "infamous": { name: "inFAMOUS",                     accent: "#b8bdff", background: "#111321", primary: "#292f5b" },
+        "killzone": { name: "Killzone",                     accent: "#ffc45e", background: "#17140d", primary: "#51401f" },
+        "sackboy":  { name: "Sackboy: A Big Adventure",    accent: "#f3a6bf", background: "#1d1018", primary: "#542a43" }
     })
-    readonly property var themeKeys: ["ps5", "ps4", "gow", "spiderman", "horizon", "tlou", "ghost", "astro", "gt7", "ratchet", "returnal", "uncharted", "bloodborne", "demons", "stranding", "chiaki"]
+    readonly property var themeKeys: ["ps5", "ps4", "ps3", "ps2", "ps1", "spiderman", "gow", "horizon", "tlou", "ghost", "astro", "gt7", "ratchet", "returnal", "uncharted", "bloodborne", "demons", "stranding", "crash", "spyro", "mgs", "ff7", "tekken3", "shadow", "ico", "lbp", "infamous", "killzone", "sackboy", "chiaki"]
     Settings {
         id: themeSettings
         category: "theme"

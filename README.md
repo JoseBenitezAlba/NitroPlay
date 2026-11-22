@@ -22,13 +22,13 @@ En la aplicación, el nombre visible es **PS5 Remoto**.
 
 - **Nitidez ajustable** en Configuración → Vídeo, con los niveles Apagado, Baja, Media y Alta.
 - **Interfaz en español.**
-- **16 estilos visuales:** 15 temas y el estilo original de chiaki-ng.
+- **30 estilos visuales:** 29 temas y el estilo original de chiaki-ng.
 - **Fondos ilustrados** que solo aparecen en el menú de consolas (y en una vista previa al elegir el tema). No cubren la transmisión.
 
 Los temas disponibles son:
 
-- **Consolas:** PS5 clásico y PS4.
-- **Juegos:** God of War, Marvel's Spider-Man, Horizon, The Last of Us, Ghost of Tsushima, Astro Bot, Gran Turismo, Ratchet & Clank, Returnal, Uncharted, Bloodborne, Demon's Souls y Death Stranding.
+- **Consolas:** PS5 clásico, PS4, PlayStation 3, PlayStation 2 y PlayStation 1 - clásico.
+- **Juegos:** Marvel's Spider-Man, God of War, Horizon, The Last of Us, Ghost of Tsushima, Astro Bot, Gran Turismo, Ratchet & Clank, Returnal, Uncharted, Bloodborne, Demon's Souls, Death Stranding, Crash Bandicoot, Spyro the Dragon, Metal Gear Solid, Final Fantasy VII, Tekken 3, Shadow of the Colossus, ICO, LittleBigPlanet, inFAMOUS, Killzone y Sackboy: A Big Adventure.
 - **Original:** chiaki-ng.
 
 Se eligen en **Configuración → General → Tema**. La elección se guarda para el siguiente inicio.

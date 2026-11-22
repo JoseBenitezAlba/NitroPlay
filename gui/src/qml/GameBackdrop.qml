@@ -148,6 +148,114 @@ Rectangle {
                 }
                 for (let i = 0; i < 9; ++i) line([[600 + i * 42, 0], [600 + i * 42, 140 + (i % 3) * 100]]);
                 break;
+            case "ps1":
+                ctx.lineWidth = 3;
+                for (let i = 0; i < 8; ++i) {
+                    line([[560 + i * 48, 620], [780, 130 + i * 28], [960, 620]]);
+                    line([[560, 620 - i * 32], [960, 620 - i * 32]]);
+                }
+                circle(780, 330, 82);
+                break;
+            case "ps2":
+                for (let r = 65; r <= 245; r += 45) circle(790, 350, r);
+                for (let i = 0; i < 12; ++i) {
+                    const a = i * Math.PI / 6;
+                    line([[790 + 60 * Math.cos(a), 350 + 60 * Math.sin(a)],
+                          [790 + 245 * Math.cos(a), 350 + 245 * Math.sin(a)]]);
+                }
+                break;
+            case "ps3":
+                for (let i = 0; i < 11; ++i) {
+                    ctx.beginPath(); ctx.moveTo(470, 160 + i * 35);
+                    ctx.bezierCurveTo(650, 50 + i * 22, 700, 640 - i * 20, 1020, 320 + i * 18); ctx.stroke();
+                }
+                circle(790, 350, 125);
+                break;
+            case "crash":
+                for (let i = 0; i < 9; ++i) {
+                    const r = 55 + i * 25;
+                    line([[770 + r * Math.cos(i * 0.6), 350 + r * Math.sin(i * 0.6)],
+                          [770 + (r + 95) * Math.cos(i * 0.6 + 0.8), 350 + (r + 95) * Math.sin(i * 0.6 + 0.8)]]);
+                }
+                circle(780, 350, 45);
+                line([[600, 650], [690, 470], [790, 560], [880, 420], [1000, 640]]);
+                break;
+            case "spyro":
+                line([[790, 350], [650, 230], [550, 170], [610, 300], [720, 390]]);
+                line([[790, 350], [930, 230], [1030, 170], [970, 300], [860, 390]]);
+                circle(790, 350, 58);
+                for (let i = 0; i < 16; ++i) {
+                    const x = 570 + ((i * 137) % 420), y = 130 + ((i * 83) % 470);
+                    line([[x - 6, y], [x + 6, y]]); line([[x, y - 6], [x, y + 6]]);
+                }
+                break;
+            case "mgs":
+                for (let r = 50; r <= 230; r += 45) circle(790, 350, r);
+                line([[560, 350], [1020, 350]]); line([[790, 120], [790, 580]]);
+                line([[790, 350], [950, 210]]);
+                break;
+            case "ff7":
+                for (let i = 0; i < 12; ++i) {
+                    const x = 650 + i * 28;
+                    line([[x, 130], [x - 170, 390], [x - 220, 500]]);
+                }
+                circle(790, 350, 54); circle(790, 350, 82);
+                for (let i = 0; i < 18; ++i) {
+                    const x = (i * 151 + 31) % 1000, y = (i * 97 + 47) % 700;
+                    line([[x - 5, y], [x + 5, y]]);
+                }
+                break;
+            case "tekken3":
+                ctx.lineWidth = 6;
+                line([[790, 120], [970, 350], [790, 580], [610, 350], [790, 120]]);
+                ctx.lineWidth = 2;
+                line([[790, 190], [910, 350], [790, 510], [670, 350], [790, 190]]);
+                line([[610, 350], [970, 350]]); line([[790, 120], [790, 580]]);
+                break;
+            case "shadow":
+                line([[500, 610], [610, 390], [660, 430], [725, 235], [770, 390], [825, 285], [900, 470], [960, 410], [1040, 620]]);
+                for (let i = 0; i < 8; ++i) line([[540 + i * 55, 650], [590 + i * 45, 600]]);
+                circle(820, 180, 62);
+                break;
+            case "ico":
+                for (let i = 0; i < 5; ++i) {
+                    const x = 610 + i * 88;
+                    ctx.beginPath(); ctx.moveTo(x, 590);
+                    ctx.lineTo(x, 310); ctx.bezierCurveTo(x, 170, x + 88, 170, x + 88, 310);
+                    ctx.lineTo(x + 88, 590); ctx.stroke();
+                }
+                line([[570, 590], [1040, 590]]);
+                break;
+            case "lbp":
+                circle(790, 350, 190); circle(790, 350, 150);
+                for (let i = 0; i < 20; ++i) {
+                    const a = i * Math.PI / 10;
+                    line([[790 + 154 * Math.cos(a), 350 + 154 * Math.sin(a)],
+                          [790 + 186 * Math.cos(a), 350 + 186 * Math.sin(a)]]);
+                }
+                circle(790, 350, 28);
+                break;
+            case "infamous":
+                line([[650, 120], [735, 290], [690, 330], [815, 340], [740, 580]]);
+                line([[900, 120], [820, 270], [865, 315], [745, 360], [865, 580]]);
+                for (let i = 0; i < 6; ++i) circle(780, 350, 90 + i * 26);
+                break;
+            case "killzone":
+                ctx.beginPath(); ctx.moveTo(550, 350);
+                ctx.bezierCurveTo(650, 210, 900, 210, 1030, 350);
+                ctx.bezierCurveTo(900, 490, 650, 490, 550, 350); ctx.stroke();
+                circle(790, 350, 76); circle(790, 350, 24);
+                line([[560, 350], [1020, 350]]);
+                break;
+            case "sackboy":
+                circle(790, 350, 190);
+                for (let i = 0; i < 11; ++i) {
+                    const y = 210 + i * 28;
+                    line([[620, y], [960, y]]);
+                    line([[620 + (i % 2) * 14, y - 14], [620 + (i % 2) * 14, y + 14]]);
+                }
+                circle(790, 350, 35);
+                break;
             default:
                 for (let i = 0; i < 9; ++i) {
                     ctx.beginPath(); ctx.moveTo(-100, 530 + i * 25);

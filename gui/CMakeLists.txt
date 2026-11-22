@@ -154,7 +154,7 @@ endif()
 set_target_properties(chiaki PROPERTIES
 		MACOSX_BUNDLE TRUE
 		MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/MacOSXBundleInfo.plist.in"
-		MACOSX_BUNDLE_BUNDLE_NAME chiaki-ng
+		MACOSX_BUNDLE_BUNDLE_NAME "PS5 Remoto"
 		MACOSX_BUNDLE_BUNDLE_VERSION ${CHIAKI_VERSION}
 		MACOSX_BUNDLE_COPYRIGHT "thestr4ng3r (AGPLv3)"
 		MACOSX_BUNDLE_GUI_IDENTIFIER "org.streetpea.chiaking"
@@ -166,4 +166,5 @@ install(TARGETS chiaki
 		BUNDLE DESTINATION bin)
 install(FILES chiaking.desktop DESTINATION share/applications)
 install(FILES chiaking.png DESTINATION share/icons/hicolor/512x512/apps)
+install(FILES res/chiaking.svg DESTINATION share/icons/hicolor/scalable/apps)
 install(FILES io.github.streetpea.Chiaki4deck.appdata.xml DESTINATION share/metainfo)

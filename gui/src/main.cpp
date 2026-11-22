@@ -158,11 +158,7 @@ int real_main(int argc, char *argv[])
 			app.installTranslator(translator);
 	}
 
-#ifdef Q_OS_MACOS
-	QGuiApplication::setWindowIcon(QIcon(":/icons/chiaking_macos.svg"));
-#else
 	QGuiApplication::setWindowIcon(QIcon(":/icons/chiaking.svg"));
-#endif
 
 	QCommandLineParser parser;
 	parser.setOptionsAfterPositionalArgumentsMode(QCommandLineParser::ParseAsPositionalArguments);
