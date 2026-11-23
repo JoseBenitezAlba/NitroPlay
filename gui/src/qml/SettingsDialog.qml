@@ -2255,7 +2255,7 @@ DialogView {
 
                         Button {
                             id: resetAllKeys
-                            text: "Reset All Keys"
+                            text: qsTr("Reset All Keys")
                             Layout.alignment: Qt.AlignRight
                             property bool firstInFocusChain: true
                             property bool lastInFocusChain: false
@@ -2589,7 +2589,7 @@ DialogView {
                             Layout.alignment: Qt.AlignHCenter
                             id: controllerMappingChange
                             firstInFocusChain: true
-                            text: "Change Controller Mapping"
+                            text: qsTr("Change Controller Mapping")
                             onClicked: controllerMappingDialog.show({
                                 reset: false
                             });
@@ -2597,7 +2597,7 @@ DialogView {
                         C.Button {
                             Layout.alignment: Qt.AlignHCenter
                             id: controllerMappingReset
-                            text: "Reset Controller Mapping"
+                            text: qsTr("Reset Controller Mapping")
                             onClicked: controllerMappingDialog.show({
                                 reset: true
                             });

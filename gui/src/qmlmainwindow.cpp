@@ -4964,7 +4964,7 @@ void QmlMainWindow::init(Settings *settings, bool exit_app_on_stream_exit)
         if (qEnvironmentVariableIsSet("CHIAKI_FORCE_VULKAN_FALLBACK")) {
             QString reason = qEnvironmentVariable("CHIAKI_FORCE_VULKAN_FALLBACK_REASON");
             if (reason.isEmpty())
-                reason = QStringLiteral("Forced Vulkan fallback for testing");
+                reason = tr("Forced Vulkan fallback for testing");
             fallbackToOpenGL(reason);
             goto renderer_backend_ready;
         }
@@ -4973,7 +4973,7 @@ void QmlMainWindow::init(Settings *settings, bool exit_app_on_stream_exit)
             // The last launch closed before Vulkan showed a frame, which is how a crash inside the
             // Vulkan driver or a third-party Vulkan layer looks; keep OpenGL until switched back
             settings->SetRenderBackend(RenderBackend::OpenGL);
-            fallbackToOpenGL(tr("chiaki-ng closed while starting Vulkan last time, so it now uses OpenGL. "
+            fallbackToOpenGL(tr("NitroPlay closed while starting Vulkan last time, so it now uses OpenGL. "
                                 "You can switch back under Settings > Video > Renderer Backend."));
             goto renderer_backend_ready;
         }
@@ -5010,14 +5010,14 @@ void QmlMainWindow::init(Settings *settings, bool exit_app_on_stream_exit)
         };
         placebo_vk_inst = pl_vk_inst_create(placebo_log, &vk_inst_params);
         if (!placebo_vk_inst) {
-            fallbackToOpenGL(QStringLiteral("Failed to create Vulkan instance"));
+            fallbackToOpenGL(tr("Failed to create Vulkan instance"));
         } else {
 
 #define GET_PROC(name_) { \
     vk_funcs.name_ = reinterpret_cast<decltype(vk_funcs.name_)>( \
         placebo_vk_inst->get_proc_addr(placebo_vk_inst->instance, #name_)); \
     if (!vk_funcs.name_) { \
-        fallbackToOpenGL(QStringLiteral("Failed to resolve Vulkan symbol %1").arg(#name_)); \
+        fallbackToOpenGL(tr("Failed to resolve Vulkan symbol %1").arg(#name_)); \
         goto vulkan_setup_done; \
     } }
         GET_PROC(vkGetDeviceProcAddr)
@@ -5054,14 +5054,14 @@ void QmlMainWindow::init(Settings *settings, bool exit_app_on_stream_exit)
         };
         placebo_vulkan = pl_vulkan_create(placebo_log, &vulkan_params);
         if (!placebo_vulkan) {
-            fallbackToOpenGL(QStringLiteral("Failed to create Vulkan device"));
+            fallbackToOpenGL(tr("Failed to create Vulkan device"));
         } else {
 
 #define GET_PROC(name_) { \
     vk_funcs.name_ = reinterpret_cast<decltype(vk_funcs.name_)>( \
         vk_funcs.vkGetDeviceProcAddr(placebo_vulkan->device, #name_)); \
     if (!vk_funcs.name_) { \
-        fallbackToOpenGL(QStringLiteral("Failed to resolve Vulkan symbol %1").arg(#name_)); \
+        fallbackToOpenGL(tr("Failed to resolve Vulkan symbol %1").arg(#name_)); \
         goto vulkan_setup_done; \
     } }
         GET_PROC(vkWaitSemaphores)
@@ -5112,7 +5112,7 @@ vulkan_setup_done:
         if (!qt_vk_inst->create()) {
             delete qt_vk_inst;
             qt_vk_inst = nullptr;
-            fallbackToOpenGL(QStringLiteral("Failed to create QVulkanInstance"));
+            fallbackToOpenGL(tr("Failed to create QVulkanInstance"));
         }
     }
 

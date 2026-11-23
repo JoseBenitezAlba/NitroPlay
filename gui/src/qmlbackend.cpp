@@ -1700,14 +1700,14 @@ bool QmlBackend::handlePsnLoginRedirect(const QUrl &url)
 {
     if (!url.toString().startsWith(QString::fromStdString(PSNAuth::REDIRECT_PAGE)))
     {
-        emit psnLoginAccountIdError(QString("Redirect URL invalid does not start with:\n") + QString::fromStdString(PSNAuth::REDIRECT_PAGE));
+        emit psnLoginAccountIdError(tr("Invalid redirect URL, it does not start with:\n%1").arg(QString::fromStdString(PSNAuth::REDIRECT_PAGE)));
         return false;
     }
 
     const QString code = QUrlQuery(url).queryItemValue("code");
     if (code.isEmpty()) {
         qCWarning(chiakiGui) << "Invalid code from redirect url";
-        emit psnLoginAccountIdError("Redirect URL invalid");
+        emit psnLoginAccountIdError(tr("Invalid redirect URL"));
         return false;
     }
     PSNAccountID *psnId = new PSNAccountID(settings, this);

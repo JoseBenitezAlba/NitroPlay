@@ -27,7 +27,9 @@ DialogView {
         {
             nativeLoginForm.visible = true;
             nativeLoginForm.forceActiveFocus(Qt.TabFocusReason);
-            if(Qt.platform.os == "linux" || Qt.platform.os == "osx")
+            // NitroPlay: en Linux se inicia sesión dentro de la app (navegador integrado) para que la
+            // sesión quede guardada; el botón del navegador externo sigue disponible como respaldo.
+            if(Qt.platform.os == "osx")
                 extBrowserButton.clicked();
         }
         else
@@ -133,7 +135,7 @@ DialogView {
                             source: "qrc:/icons/r1.svg"
                         }
                         focusPolicy: Qt.NoFocus
-                        text: "Use external browser"
+                        text: qsTr("Use external browser")
                         onClicked: {
                             nativeLoginForm.visible = false;
                             psnLoginToolbar.visible = false;
@@ -185,7 +187,7 @@ DialogView {
                 columnSpacing: 20
                 Label {
                     id: nativeErrorHeader
-                    text: "Retrieving PSN account ID failed with error: "
+                    text: qsTr("Retrieving PSN account ID failed with error: ")
                     Layout.fillHeight: true
                     Layout.preferredWidth: 400
                     Layout.leftMargin: 20
@@ -200,7 +202,7 @@ DialogView {
 
                 Label {
                     id: retryButton
-                    text: "Retry process"
+                    text: qsTr("Retry process")
                     Layout.fillHeight: true
                     Layout.preferredWidth: 300
                     Layout.leftMargin: 20
@@ -208,7 +210,7 @@ DialogView {
                 C.Button {
                     firstInFocusChain: true
                     lastInFocusChain: true
-                    text: "Retry"
+                    text: qsTr("Retry")
                     onClicked: {
                         nativeErrorGrid.visible = false;
                         nativeErrorLabel.text = "";
@@ -289,7 +291,7 @@ DialogView {
             Label {
                 id: errorHeader
                 visible: false
-                text: "Retrieving PSN account ID failed with error"
+                text: qsTr("Retrieving PSN account ID failed with error")
             }
 
             Label {

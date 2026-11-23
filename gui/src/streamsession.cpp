@@ -410,7 +410,7 @@ StreamSession::StreamSession(const StreamSessionConnectInfo &connect_info, QObje
 	{
 		pi_decoder = CHIAKI_NEW(ChiakiPiDecoder);
 		if(chiaki_pi_decoder_init(pi_decoder, log.GetChiakiLog()) != CHIAKI_ERR_SUCCESS)
-			throw ChiakiException("Failed to initialize Raspberry Pi Decoder");
+			throw ChiakiException(tr("Failed to initialize Raspberry Pi Decoder"));
 	}
 	else
 	{
@@ -428,7 +428,7 @@ StreamSession::StreamSession(const StreamSessionConnectInfo &connect_info, QObje
 		{
 			QString log = QString::fromUtf8(chiaki_log_sniffer_get_buffer(&sniffer));
 			chiaki_log_sniffer_fini(&sniffer);
-			throw ChiakiException("Failed to initialize FFMPEG Decoder:\n" + log);
+			throw ChiakiException(tr("Failed to initialize FFMPEG Decoder:\n%1").arg(log));
 		}
 		chiaki_log_sniffer_fini(&sniffer);
 		ffmpeg_decoder->log = GetChiakiLog();
@@ -493,11 +493,11 @@ StreamSession::StreamSession(const StreamSessionConnectInfo &connect_info, QObje
 	if(connect_info.duid.isEmpty())
 	{
 		if(connect_info.regist_key.size() != sizeof(chiaki_connect_info.regist_key))
-			throw ChiakiException("RegistKey invalid");
+			throw ChiakiException(tr("Invalid registration key"));
 		memcpy(chiaki_connect_info.regist_key, connect_info.regist_key.constData(), sizeof(chiaki_connect_info.regist_key));
 
 		if(connect_info.morning.size() != sizeof(chiaki_connect_info.morning))
-			throw ChiakiException("Morning invalid");
+			throw ChiakiException(tr("Invalid console login data (Morning)"));
 		memcpy(chiaki_connect_info.morning, connect_info.morning.constData(), sizeof(chiaki_connect_info.morning));
 	}
 
@@ -540,7 +540,7 @@ StreamSession::StreamSession(const StreamSessionConnectInfo &connect_info, QObje
 	{
 		err = InitiatePsnConnection(connect_info.psn_token);
 		if (err != CHIAKI_ERR_SUCCESS)
-			throw ChiakiException("Psn Connection Failed " + QString::fromLocal8Bit(chiaki_error_string(err)));
+			throw ChiakiException(tr("PSN connection failed: %1").arg(QString::fromLocal8Bit(chiaki_error_string(err))));
 		chiaki_connect_info.holepunch_session = holepunch_session;
         QByteArray psn_account_id = QByteArray::fromBase64(connect_info.psn_account_id.toUtf8());
         if (psn_account_id.size() != CHIAKI_PSN_ACCOUNT_ID_SIZE) {
@@ -550,7 +550,7 @@ StreamSession::StreamSession(const StreamSessionConnectInfo &connect_info, QObje
 	}
 	err = chiaki_session_init(&session, &chiaki_connect_info, GetChiakiLog());
 	if(err != CHIAKI_ERR_SUCCESS)
-		throw ChiakiException("Chiaki Session Init failed: " + QString::fromLocal8Bit(chiaki_error_string(err)));
+		throw ChiakiException(tr("Session initialization failed: %1").arg(QString::fromLocal8Bit(chiaki_error_string(err))));
 	ChiakiCtrlDisplaySink display_sink;
 	display_sink.user = this;
 	display_sink.cantdisplay_cb = CantDisplayCb;
@@ -825,7 +825,7 @@ void StreamSession::Start()
 	ChiakiErrorCode err = chiaki_session_start(&session);
 	if(err != CHIAKI_ERR_SUCCESS)
 	{
-		throw ChiakiException("Chiaki Session Start failed");
+		throw ChiakiException(tr("Session start failed"));
 	}
 	session_started = true;
 }

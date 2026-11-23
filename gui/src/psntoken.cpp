@@ -46,7 +46,7 @@ void PSNToken::handleAccessTokenResponse(const QString& url, const QJsonDocument
 }
 
 void PSNToken::handleErrorResponse(const QString& url, const QString& error, const QNetworkReply::NetworkError& err) {
-    emit PSNTokenError(QString("[E] : Url (%1) returned error (%2) with error code (%3)").arg(url).arg(error).arg(err));
+    emit PSNTokenError(tr("[E] : URL (%1) returned error (%2) with error code (%3)").arg(url).arg(error).arg(err));
     if(err == QNetworkReply::ProtocolInvalidOperationError)
         emit UnauthorizedError();
     emit Finished();

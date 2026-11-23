@@ -39,7 +39,8 @@ DialogView {
         Chiaki.settings.remotePlayAsk = true;
         nativeTokenForm.visible = true;
         nativeTokenForm.forceActiveFocus(Qt.TabFocusReason);
-        if(Qt.platform.os == "linux" || Qt.platform.os == "osx")
+        // NitroPlay: en Linux, inicio de sesión dentro de la app (se guarda la sesión).
+        if(Qt.platform.os == "osx")
             extBrowserButton.clicked();
     }
     function close() {
@@ -137,7 +138,7 @@ DialogView {
                             source: "qrc:/icons/r1.svg"
                         }
                         focusPolicy: Qt.NoFocus
-                        text: "Use external browser"
+                        text: qsTr("Use external browser")
                         onClicked: {
                             nativeTokenForm.visible = false;
                             psnTokenToolbar.visible = false;
@@ -189,7 +190,7 @@ DialogView {
                 columnSpacing: 20
                 Label {
                     id: nativeErrorHeader
-                    text: "Retrieving PSN account ID failed with error: "
+                    text: qsTr("Retrieving PSN account ID failed with error: ")
                     Layout.fillHeight: true
                     Layout.preferredWidth: 400
                     Layout.leftMargin: 20
@@ -204,7 +205,7 @@ DialogView {
 
                 Label {
                     id: retryButton
-                    text: "Retry process"
+                    text: qsTr("Retry process")
                     Layout.fillHeight: true
                     Layout.preferredWidth: 300
                     Layout.leftMargin: 20
@@ -212,7 +213,7 @@ DialogView {
                 C.Button {
                     firstInFocusChain: true
                     lastInFocusChain: true
-                    text: "Retry"
+                    text: qsTr("Retry")
                     onClicked: {
                         nativeErrorGrid.visible = false;
                         nativeErrorLabel.text = "";
