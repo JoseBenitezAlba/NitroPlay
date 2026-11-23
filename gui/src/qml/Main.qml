@@ -43,9 +43,21 @@ Item {
         "lbp":      { name: "LittleBigPlanet",              accent: "#ffc47b", background: "#21160e", primary: "#5c3a24" },
         "infamous": { name: "inFAMOUS",                     accent: "#b8bdff", background: "#111321", primary: "#292f5b" },
         "killzone": { name: "Killzone",                     accent: "#ffc45e", background: "#17140d", primary: "#51401f" },
-        "sackboy":  { name: "Sackboy: A Big Adventure",    accent: "#f3a6bf", background: "#1d1018", primary: "#542a43" }
+        "sackboy":  { name: "Sackboy: A Big Adventure",    accent: "#f3a6bf", background: "#1d1018", primary: "#542a43" },
+        "jak":      { name: "Jak and Daxter",               accent: "#f2c14e", background: "#0f1a10", primary: "#2c4a24" },
+        "sly":      { name: "Sly Cooper",                   accent: "#4fd6cf", background: "#0d1326", primary: "#233a66" },
+        "daysgone": { name: "Days Gone",                    accent: "#e58a4b", background: "#141511", primary: "#3a3424" },
+        "detroit":  { name: "Detroit: Become Human",        accent: "#4fc3ff", background: "#0a0f16", primary: "#1c2d40" },
+        "persona5": { name: "Persona 5",                    accent: "#ff2a3d", background: "#0d0b0b", primary: "#3b0f14" },
+        "re":       { name: "Resident Evil",                accent: "#e3373f", background: "#120a0b", primary: "#3a1418" },
+        "silenthill":{name: "Silent Hill",                  accent: "#cfc6b8", background: "#141414", primary: "#34312c" },
+        "kh":       { name: "Kingdom Hearts",               accent: "#f6d365", background: "#0d1530", primary: "#23356b" },
+        "stellar":  { name: "Stellar Blade",                accent: "#ff8fc6", background: "#0e0f1c", primary: "#2c2448" },
+        "helldivers":{name: "Helldivers 2",                 accent: "#ffe14d", background: "#0c0e11", primary: "#2b2f36" },
+        "wipeout":  { name: "WipEout",                      accent: "#ff3cac", background: "#090914", primary: "#2b1747" },
+        "parappa":  { name: "PaRappa the Rapper",           accent: "#ffcf4a", background: "#1f1430", primary: "#4a2e6b" }
     })
-    readonly property var themeKeys: ["ps5", "ps4", "ps3", "ps2", "ps1", "spiderman", "gow", "horizon", "tlou", "ghost", "astro", "gt7", "ratchet", "returnal", "uncharted", "bloodborne", "demons", "stranding", "crash", "spyro", "mgs", "ff7", "tekken3", "shadow", "ico", "lbp", "infamous", "killzone", "sackboy", "chiaki"]
+    readonly property var themeKeys: ["ps5", "ps4", "ps3", "ps2", "ps1", "spiderman", "gow", "horizon", "tlou", "ghost", "astro", "gt7", "ratchet", "returnal", "uncharted", "bloodborne", "demons", "stranding", "crash", "spyro", "mgs", "ff7", "tekken3", "shadow", "ico", "lbp", "infamous", "killzone", "sackboy", "jak", "sly", "daysgone", "detroit", "persona5", "re", "silenthill", "kh", "stellar", "helldivers", "wipeout", "parappa", "chiaki"]
     Settings {
         id: themeSettings
         category: "theme"

@@ -256,6 +256,85 @@ Rectangle {
                 }
                 circle(790, 350, 35);
                 break;
+            case "jak": // orbes y espiral de los Precursores
+                for (let i = 0; i < 7; ++i) circle(790, 350, 40 + i * 32);
+                for (let i = 0; i < 12; ++i) {
+                    const a = i * Math.PI / 6;
+                    circle(790 + Math.cos(a) * 270, 350 + Math.sin(a) * 270, 14);
+                }
+                break;
+            case "sly": // luna y tejados de la ciudad de noche
+                circle(820, 180, 95);
+                line([[480, 700], [480, 470], [560, 420], [640, 470], [640, 380], [720, 330], [800, 380],
+                      [800, 450], [880, 410], [960, 450], [960, 360], [1040, 320], [1040, 700]]);
+                for (let i = 0; i < 5; ++i) line([[520 + i * 110, 520], [560 + i * 110, 520]]);
+                break;
+            case "daysgone": // carretera y pinos
+                line([[700, 700], [880, 260]]); line([[1060, 700], [920, 260]]);
+                for (let i = 0; i < 6; ++i) line([[890 - i * 6, 640 - i * 70], [893 - i * 6, 600 - i * 70]]);
+                for (let i = 0; i < 7; ++i) {
+                    const x = 470 + i * 60;
+                    line([[x, 520], [x + 28, 380], [x + 56, 520]]); line([[x + 28, 520], [x + 28, 570]]);
+                }
+                break;
+            case "detroit": // anillo LED y triángulo
+                for (let i = 0; i < 3; ++i) circle(790, 350, 150 + i * 22);
+                line([[790, 230], [890, 410], [690, 410], [790, 230]]);
+                break;
+            case "persona5": // cortes en zigzag y estrella
+                ctx.lineWidth = 6;
+                for (let i = 0; i < 6; ++i)
+                    line([[480 + i * 40, 700], [620 + i * 60, 420], [560 + i * 60, 380], [760 + i * 50, 0]]);
+                ctx.lineWidth = 3;
+                line([[830, 180], [855, 250], [930, 250], [870, 295], [893, 365], [830, 322],
+                      [767, 365], [790, 295], [730, 250], [805, 250], [830, 180]]);
+                break;
+            case "re": // paraguas de 8 gajos
+                circle(790, 350, 210);
+                for (let i = 0; i < 8; ++i) {
+                    const a = i * Math.PI / 4;
+                    line([[790, 350], [790 + Math.cos(a) * 210, 350 + Math.sin(a) * 210]]);
+                }
+                break;
+            case "silenthill": // niebla ondulada
+                for (let i = 0; i < 16; ++i) {
+                    ctx.beginPath(); ctx.moveTo(380, 120 + i * 36);
+                    ctx.bezierCurveTo(560, 90 + i * 36, 760, 160 + i * 36, 1040, 110 + i * 36); ctx.stroke();
+                }
+                break;
+            case "kh": // corona y corazón
+                line([[690, 330], [710, 200], [750, 280], [790, 170], [830, 280], [870, 200], [890, 330], [690, 330]]);
+                ctx.beginPath(); ctx.moveTo(790, 560);
+                ctx.bezierCurveTo(640, 460, 690, 360, 790, 430);
+                ctx.bezierCurveTo(890, 360, 940, 460, 790, 560); ctx.stroke();
+                break;
+            case "stellar": // hoja de espada y estrellas
+                ctx.lineWidth = 5;
+                line([[600, 620], [960, 120]]); line([[630, 560], [690, 600]]);
+                ctx.lineWidth = 2;
+                for (let i = 0; i < 24; ++i) circle((i * 167) % 520 + 480, (i * 97) % 640 + 30, 3);
+                break;
+            case "helldivers": // cápsulas de descenso
+                ctx.lineWidth = 4;
+                for (let i = 0; i < 7; ++i) {
+                    const x = 520 + i * 75, y = 80 + (i % 3) * 120;
+                    line([[x, y], [x + 40, y + 180]]);
+                    line([[x + 30, y + 190], [x + 50, y + 190], [x + 40, y + 225], [x + 30, y + 190]]);
+                }
+                break;
+            case "wipeout": // pista de carreras y flechas
+                for (let i = 0; i < 6; ++i) {
+                    ctx.beginPath(); ctx.moveTo(420, 650 - i * 20);
+                    ctx.bezierCurveTo(640, 600 - i * 20, 760, 160 + i * 20, 1040, 120 + i * 20); ctx.stroke();
+                }
+                for (let i = 0; i < 4; ++i) line([[800 + i * 45, 300], [830 + i * 45, 340], [800 + i * 45, 380]]);
+                break;
+            case "parappa": // notas musicales
+                for (let i = 0; i < 7; ++i) {
+                    const x = 560 + i * 70, y = 200 + (i % 3) * 110;
+                    circle(x, y + 120, 18); line([[x + 18, y + 120], [x + 18, y]]); line([[x + 18, y], [x + 50, y + 25]]);
+                }
+                break;
             default:
                 for (let i = 0; i < 9; ++i) {
                     ctx.beginPath(); ctx.moveTo(-100, 530 + i * 25);

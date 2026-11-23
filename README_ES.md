@@ -1,13 +1,13 @@
 # NitroPlay
 
-Cliente comunitario de juego remoto para PlayStation 4 y PlayStation 5, basado en chiaki-ng. Incluye la interfaz en español, nitidez ajustable en Configuración → Vídeo y 30 estilos visuales: 29 temas y el estilo NitroPlay original.
+Cliente comunitario de juego remoto para PlayStation 4 y PlayStation 5, basado en chiaki-ng. Incluye la interfaz en español, nitidez ajustable en Configuración → Vídeo y 42 estilos visuales: 41 temas y el estilo NitroPlay original.
 
 
 ## Temas
 
 **Consolas:** PS5 clásico, PS4, PlayStation 3, PlayStation 2 y PlayStation 1 - clásico.
 
-**Juegos:** Marvel's Spider-Man, God of War, Horizon, The Last of Us, Ghost of Tsushima, Astro Bot, Gran Turismo, Ratchet & Clank, Returnal, Uncharted, Bloodborne, Demon's Souls, Death Stranding, Crash Bandicoot, Spyro the Dragon, Metal Gear Solid, Final Fantasy VII, Tekken 3, Shadow of the Colossus, ICO, LittleBigPlanet, inFAMOUS, Killzone y Sackboy: A Big Adventure.
+**Juegos:** Marvel's Spider-Man, God of War, Horizon, The Last of Us, Ghost of Tsushima, Astro Bot, Gran Turismo, Ratchet & Clank, Returnal, Uncharted, Bloodborne, Demon's Souls, Death Stranding, Crash Bandicoot, Spyro the Dragon, Metal Gear Solid, Final Fantasy VII, Tekken 3, Shadow of the Colossus, ICO, LittleBigPlanet, inFAMOUS, Killzone, Sackboy: A Big Adventure, Jak and Daxter, Sly Cooper, Days Gone, Detroit: Become Human, Persona 5, Resident Evil, Silent Hill, Kingdom Hearts, Stellar Blade, Helldivers 2, WipEout y PaRappa the Rapper.
 
 **Original:** NitroPlay original.
 
