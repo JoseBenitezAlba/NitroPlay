@@ -3706,7 +3706,7 @@ Por favor, usa Steam para mapear el controlador o desactiva la Entrada de Steam 
     <message>
         <location filename="../src/qml/SteamShortcutDialog.qml" line="15"/>
         <source>Create Non-Steam Game</source>
-        <translation>Crear Juego No de Steam</translation>
+        <translation>Añadir a Steam</translation>
     </message>
     <message>
         <location filename="../src/qml/SteamShortcutDialog.qml" line="16"/>
@@ -3737,22 +3737,12 @@ Esto habilita:
     <message>
         <location filename="../src/qml/SteamShortcutDialog.qml" line="63"/>
         <source>Steam Game Name</source>
-        <translation>Nombre del Juego de Steam</translation>
-    </message>
-    <message>
-        <location filename="../src/qml/SteamShortcutDialog.qml" line="69"/>
-        <source>chiaki-ng </source>
-        <translation>chiaki-ng</translation>
-    </message>
-    <message>
-        <location filename="../src/qml/SteamShortcutDialog.qml" line="69"/>
-        <source>chiaki-ng</source>
-        <translation>chiaki-ng</translation>
+        <translation>Nombre en Steam</translation>
     </message>
     <message>
         <location filename="../src/qml/SteamShortcutDialog.qml" line="75"/>
         <source>Launch Options [Optional]</source>
-        <translation>Opciones de Inicio [Opcional]</translation>
+        <translation>Opciones de inicio (opcional)</translation>
     </message>
     <message>
         <location filename="../src/qml/SteamShortcutDialog.qml" line="80"/>
@@ -3762,25 +3752,30 @@ Esto habilita:
     <message>
         <location filename="../src/qml/SteamShortcutDialog.qml" line="86"/>
         <source>Custom Steam Base Path (Optional)</source>
-        <translation>Ruta Personalizada de la Base de Steam (Opcional)</translation>
+        <translation>Carpeta de Steam (opcional)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SteamShortcutDialog.qml" line="100"/>
+        <location filename="../src/qml/SteamShortcutDialog.qml" line="93"/>
+        <source>Automatic (detected by itself)</source>
+        <translation>Automática (se detecta sola)</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/SteamShortcutDialog.qml" line="101"/>
         <source>Choose new steam base path</source>
-        <translation>Elegir nueva ruta de base de Steam</translation>
+        <translation>Elegir carpeta de Steam…</translation>
     </message>
     <message>
-        <location filename="../src/qml/SteamShortcutDialog.qml" line="114"/>
+        <location filename="../src/qml/SteamShortcutDialog.qml" line="115"/>
         <source>Create non-Steam game</source>
-        <translation>Crear juego no de Steam</translation>
+        <translation>Añadir a Steam</translation>
     </message>
     <message>
-        <location filename="../src/qml/SteamShortcutDialog.qml" line="167"/>
+        <location filename="../src/qml/SteamShortcutDialog.qml" line="168"/>
         <source>Please Restart Steam</source>
-        <translation>Por favor, Reinicie Steam</translation>
+        <translation>Reinicia Steam</translation>
     </message>
     <message>
-        <location filename="../src/qml/SteamShortcutDialog.qml" line="187"/>
+        <location filename="../src/qml/SteamShortcutDialog.qml" line="188"/>
         <source>In order for %1 to appear in Steam,
 Steam must be restarted!</source>
         <translation>Para que %1 aparezca en Steam,

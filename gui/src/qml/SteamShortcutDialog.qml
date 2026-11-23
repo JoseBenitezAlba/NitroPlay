@@ -66,7 +66,7 @@ DialogView {
             C.TextField {
                 id: name
                 Layout.preferredWidth: 400
-                text: Chiaki.settings.currentProfile ? qsTr("chiaki-ng ") + Chiaki.settings.currentProfile: qsTr("chiaki-ng")
+                text: Chiaki.settings.currentProfile ? "NitroPlay " + Chiaki.settings.currentProfile : "NitroPlay"
                 firstInFocusChain: true
             }
 
@@ -86,10 +86,11 @@ DialogView {
                 text: qsTr("Custom Steam Base Path (Optional)")
             }
 
-            Label {
-                Layout.alignment: Qt.AlignRight
+            C.TextField {
                 Layout.preferredWidth: 400
+                readOnly: true
                 text: shortcutGrid.steamBasePath
+                placeholderText: qsTr("Automatic (detected by itself)")
             }
 
             Label {
