@@ -386,12 +386,17 @@
         <translation>PlayStation 1 - clásico</translation>
     </message>
     <message>
-        <location filename="../src/qml/Main.qml" line="217"/>
+        <location filename="../src/qml/Main.qml" line="72"/>
+        <source>Custom</source>
+        <translation>Personalizado</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/Main.qml" line="251"/>
         <source>Renderer Fallback</source>
         <translation>Renderizador Alternativo</translation>
     </message>
     <message>
-        <location filename="../src/qml/Main.qml" line="218"/>
+        <location filename="../src/qml/Main.qml" line="252"/>
         <source>Vulkan renderer is unavailable and NitroPlay switched to OpenGL.
 
 Reason: %1</source>
@@ -400,23 +405,23 @@ Reason: %1</source>
 Razón: %1</translation>
     </message>
     <message>
-        <location filename="../src/qml/Main.qml" line="537"/>
+        <location filename="../src/qml/Main.qml" line="571"/>
         <source>OK</source>
         <translation>Aceptar</translation>
     </message>
     <message>
-        <location filename="../src/qml/Main.qml" line="600"/>
-        <location filename="../src/qml/Main.qml" line="602"/>
+        <location filename="../src/qml/Main.qml" line="634"/>
+        <location filename="../src/qml/Main.qml" line="636"/>
         <source>Registration Type</source>
         <translation>Tipo de Registro</translation>
     </message>
     <message>
-        <location filename="../src/qml/Main.qml" line="600"/>
+        <location filename="../src/qml/Main.qml" line="634"/>
         <source>Would you like to use automatic registration?</source>
         <translation>¿Te gustaría usar el registro automático?</translation>
     </message>
     <message>
-        <location filename="../src/qml/Main.qml" line="602"/>
+        <location filename="../src/qml/Main.qml" line="636"/>
         <source>Would you like to use automatic registration (must be main PS4 console registered to your PSN)?</source>
         <translation>¿Te gustaría usar el registro automático (debe estar registrada la consola PS4 principal en tu PSN)?</translation>
     </message>
@@ -1968,8 +1973,8 @@ Esto habilita:
     </message>
     <message>
         <location filename="../src/qmlbackend.cpp" line="1168"/>
-        <source>Chiaki Session has quit</source>
-        <translation>La sesión de Chiaki ha finalizado</translation>
+        <source>NitroPlay session has quit</source>
+        <translation>La sesión de NitroPlay ha finalizado</translation>
     </message>
     <message>
         <location filename="../src/qmlbackend.cpp" line="1170"/>
@@ -2067,8 +2072,22 @@ Esto habilita:
     </message>
     <message>
         <location filename="../src/qmlmainwindow.cpp" line="6031"/>
-        <source>The Vulkan surface could not recover. Chiaki-ng will relaunch with OpenGL for this run only.</source>
-        <translation>No se pudo recuperar la superficie Vulkan. Chiaki-ng se reiniciará con OpenGL solo para esta ejecución.</translation>
+        <source>The Vulkan surface could not recover. NitroPlay will relaunch with OpenGL for this run only.</source>
+        <translation>No se pudo recuperar la superficie Vulkan. NitroPlay se reiniciará con OpenGL solo para esta sesión.</translation>
+    </message>
+    <message>
+        <location filename="../src/qmlmainwindow.cpp" line="6429"/>
+        <source>The Vulkan renderer stopped responding. NitroPlay will relaunch with OpenGL for this run only.
+
+Reason: %1</source>
+        <translation>El renderizador Vulkan dejó de responder. NitroPlay se reiniciará con OpenGL solo para esta sesión.
+
+Motivo: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/qmlmainwindow.cpp" line="7038"/>
+        <source>The Vulkan swapchain could not recover. NitroPlay will relaunch with OpenGL for this run only.</source>
+        <translation>No se pudo recuperar la cadena de intercambio Vulkan. NitroPlay se reiniciará con OpenGL solo para esta sesión.</translation>
     </message>
     <message>
         <location filename="../src/qmlmainwindow.cpp" line="6032"/>
@@ -2081,23 +2100,9 @@ Esto habilita:
         <translation>Dispositivo Vulkan perdido</translation>
     </message>
     <message>
-        <location filename="../src/qmlmainwindow.cpp" line="6429"/>
-        <source>The Vulkan renderer stopped responding. Chiaki-ng will relaunch with OpenGL for this run only.
-
-Reason: %1</source>
-        <translation>El renderizador Vulkan dejó de responder. Chiaki-ng se reiniciará con OpenGL solo para esta ejecución.
-
-Razón: %1</translation>
-    </message>
-    <message>
         <location filename="../src/qmlmainwindow.cpp" line="6430"/>
         <source>Vulkan device was lost. OpenGL is being used for this launch only. Reason: %1</source>
         <translation>El dispositivo Vulkan fue perdido. OpenGL se está usando solo para este lanzamiento. Razón: %1</translation>
-    </message>
-    <message>
-        <location filename="../src/qmlmainwindow.cpp" line="7038"/>
-        <source>The Vulkan swapchain could not recover. Chiaki-ng will relaunch with OpenGL for this run only.</source>
-        <translation>No se pudo recuperar la cadena de intercambio Vulkan. Chiaki-ng se reiniciará con OpenGL solo para esta ejecución.</translation>
     </message>
     <message>
         <location filename="../src/qmlmainwindow.cpp" line="7039"/>
@@ -2471,7 +2476,7 @@ Esto habilita:
     </message>
     <message>
         <location filename="../src/qml/SettingsDialog.qml" line="375"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1199"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1243"/>
         <source>Remote</source>
         <translation>Remoto</translation>
     </message>
@@ -2524,1141 +2529,1171 @@ Esto habilita:
     </message>
     <message>
         <location filename="../src/qml/SettingsDialog.qml" line="526"/>
+        <source>Theme colors:</source>
+        <translation>Colores del tema:</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/SettingsDialog.qml" line="533"/>
+        <source>Accent</source>
+        <translation>Acento</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/SettingsDialog.qml" line="534"/>
+        <source>Background</source>
+        <translation>Fondo</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/SettingsDialog.qml" line="535"/>
+        <source>Primary</source>
+        <translation>Principal</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/SettingsDialog.qml" line="565"/>
+        <source>(saved as Custom)</source>
+        <translation>(se guarda como Personalizado)</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/SettingsDialog.qml" line="570"/>
         <source>Steam Deck Haptics:</source>
         <translation>Hápticos de Steam Deck:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="531"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="575"/>
         <source>True haptics for SteamDeck, better quality but noisier</source>
         <translation>Hápticos reales para Steam Deck, mejor calidad pero más ruidoso</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="544"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="568"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="628"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="913"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="946"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1072"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1718"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1736"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1870"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1886"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2816"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2960"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="588"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="612"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="672"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="957"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="990"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1116"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1762"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1780"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1914"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1930"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2860"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3004"/>
         <source>(Unchecked)</source>
         <translation>(Sin marcar)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="550"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="594"/>
         <source>Steam Deck Vertical:</source>
         <translation>Steam Deck Vertical:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="555"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="599"/>
         <source>Use Steam Deck in vertical orientation (motion controls)</source>
         <translation>Usar Steam Deck en orientación vertical (controles de movimiento)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="574"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="618"/>
         <source>Audio/Video:</source>
         <translation>Audio/Vídeo:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="579"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="623"/>
         <source>Audio and Video Enabled</source>
         <translation>Audio y vídeo habilitados</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="579"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="623"/>
         <source>Audio Disabled</source>
         <translation>Audio Desactivado</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="579"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="623"/>
         <source>Video Disabled</source>
         <translation>Vídeo Desactivado</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="579"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="623"/>
         <source>Audio and Video Disabled</source>
         <translation>Audio y Vídeo Desactivados</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="586"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="630"/>
         <source>(Audio and Video Enabled)</source>
         <translation>(Audio y Vídeo Activados)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="591"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="635"/>
         <source>Log Directory:</source>
         <translation>Directorio de Registros:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="608"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1084"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1099"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="652"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1128"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1143"/>
         <source>Open</source>
         <translation>Abrir</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="618"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="662"/>
         <source>Streamer Mode (Hides Info)</source>
         <translation>Modo Transmisión (Oculta Info)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="633"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="677"/>
         <source>Stream Menu Shortcut Enabled</source>
         <translation>Atajo del Menú de Transmisión Habilitado</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="653"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="927"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2624"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2652"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="697"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="971"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2668"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2696"/>
         <source>(Checked)</source>
         <translation>(Marcado)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="662"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="706"/>
         <source>Stream Menu Combo:</source>
         <translation>Combinación del Menú de Transmisión:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>Not Used</source>
         <translation>No Utilizado</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>Cross</source>
         <translation>Cruz</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>Moon</source>
         <translation>Luna</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>Box</source>
         <translation>Box</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>Pyramid</source>
         <translation>Pirámide</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>Dpad Left</source>
         <translation>Dpad Izquierda</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>Dpad Right</source>
         <translation>Dpad Derecha</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>Dpad Up</source>
         <translation>Dpad Arriba</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>Dpad Down</source>
         <translation>Dpad Abajo</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>L1</source>
         <translation>L1</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>R1</source>
         <translation>R1</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>L3</source>
         <translation>L3</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>R3</source>
         <translation>R3</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>Options</source>
         <translation>Opciones</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>Share</source>
         <translation>Compartir</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>Touchpad</source>
         <translation>Touchpad</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="669"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="688"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="707"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="726"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2712"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2731"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2750"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2769"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="713"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="732"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="751"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="770"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2756"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2775"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2813"/>
         <source>PS</source>
         <translation>PS</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="743"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="787"/>
         <source>(L1+R1+L3+R3)</source>
         <translation>(L1+R1+L3+R3)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="779"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="823"/>
         <source>Hardware Decoder:</source>
         <translation>Decodificador de Hardware:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="799"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="843"/>
         <source>Zero-Copy</source>
         <translation>Zero-Copy</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="815"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1617"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1641"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="859"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1661"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1685"/>
         <source>(Auto)</source>
         <translation>(Automático)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="820"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="864"/>
         <source>Window Type:</source>
         <translation>Tipo de Ventana:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="827"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="871"/>
         <source>Stream Resolution</source>
         <translation>Resolución de Transmisión</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="827"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="871"/>
         <source>Custom Resolution</source>
         <translation>Resolución Personalizada</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="827"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="871"/>
         <source>Adjust Resolution Manually</source>
         <translation>Ajustar Resolución Manualmente</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="827"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="871"/>
         <source>Fullscreen</source>
         <translation>Pantalla Completa</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="827"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="871"/>
         <source>Zoom [adjust zoom using slider in stream menu]</source>
         <translation>Zoom [ajusta el zoom usando el deslizador en el menú de transmisión]</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="827"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="871"/>
         <source>Stretch</source>
         <translation>Estirar</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="834"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="878"/>
         <source>(Fullscreen)</source>
         <translation>(Pantalla Completa)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="839"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="883"/>
         <source>Custom Resolution Width</source>
         <translation>Ancho de Resolución Personalizada</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="865"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="909"/>
         <source>(1920)</source>
         <translation>(1920)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="871"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="915"/>
         <source>Custom Resolution Height</source>
         <translation>Alto de Resolución Personalizada</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="897"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="941"/>
         <source>(1080)</source>
         <translation>(1080)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="903"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="947"/>
         <source>Toggle Fullscreen on Double-click:</source>
         <translation>Alternar Pantalla Completa con Doble Clic:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="918"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="962"/>
         <source>Hide Cursor during Stream</source>
         <translation>Ocultar Cursor Durante la Transmisión</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="932"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="976"/>
         <source>Vertical Sync:</source>
         <translation>Sincronización Vertical:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="951"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="995"/>
         <source>Render Preset:</source>
         <translation>Preset de Renderizado:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="956"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1000"/>
         <source>Fast</source>
         <translation>Rápido</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="956"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1000"/>
         <source>Default</source>
         <translation>Predeterminado</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="956"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1000"/>
         <source>High Quality</source>
         <translation>Alta Calidad</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="956"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1000"/>
         <source>High Quality + Spatial Upscaling</source>
         <translation>Alta Calidad + Escalado Espacial</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="956"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1000"/>
         <source>High Quality + Advanced Spatial Upscaling</source>
         <translation>Alta Calidad + Escalado Espacial Avanzado</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="956"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1000"/>
         <source>Custom</source>
         <translation>Personalizado</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="973"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1017"/>
         <source>(High Quality)</source>
         <translation>(Alta Calidad)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="978"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1022"/>
         <source>Frame Delivery:</source>
         <translation>Entrega de Cuadros:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="983"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1027"/>
         <source>Direct Mapping</source>
         <translation>Mapeo Directo</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="983"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1027"/>
         <source>Frame Queue</source>
         <translation>Cola de Cuadros</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="997"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1041"/>
         <source>(Direct Mapping)</source>
         <translation>(Mapeo Directo)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1002"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1046"/>
         <source>Frame Mixer:</source>
         <translation>Mezclador de Cuadros:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1007"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1051"/>
         <source>None</source>
         <translation>Ninguno</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1007"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1051"/>
         <source>Oversample</source>
         <translation>Supremuestreo</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1007"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1051"/>
         <source>Hermite</source>
         <translation>Hermite</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1007"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1051"/>
         <source>Linear</source>
         <translation>Lineal</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1007"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1051"/>
         <source>Cubic</source>
         <translation>Cúbico</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1015"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1059"/>
         <source>(None)</source>
         <translation>(Ninguno)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1037"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1081"/>
         <source>Renderer Backend:</source>
         <translation>Backend del Renderizador:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1042"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1086"/>
         <source>Vulkan</source>
         <translation>Vulkan</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1042"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1086"/>
         <source>OpenGL</source>
         <translation>OpenGL</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1055"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1099"/>
         <source>(Vulkan)</source>
         <translation>(Vulkan)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1060"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1104"/>
         <source>Vulkan Deferred Swap:</source>
         <translation>Intercambio diferido Vulkan:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1078"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1122"/>
         <source>Custom Renderer Settings</source>
         <translation>Configuración personalizada del renderizado</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1094"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1138"/>
         <source>Display Settings</source>
         <translation>Configuración de Pantalla</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1139"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1183"/>
         <source>Settings for:</source>
         <translation>Configuración para:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1147"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1191"/>
         <source>PS4</source>
         <translation>PS4</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1147"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1191"/>
         <source>PS5</source>
         <translation>PS5</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1169"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1174"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1179"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1184"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1189"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1213"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1218"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1223"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1228"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1233"/>
         <source></source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1194"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1238"/>
         <source>Local</source>
         <translation>Local</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1204"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1248"/>
         <source>Resolution:</source>
         <translation>Resolución:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1210"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1231"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1252"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1273"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1254"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1275"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1296"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1317"/>
         <source>360p</source>
         <translation>360p</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1210"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1231"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1252"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1273"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1254"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1275"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1296"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1317"/>
         <source>540p</source>
         <translation>540p</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1210"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1231"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1273"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1254"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1275"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1317"/>
         <source>720p (Default)</source>
         <translation>720p (Predeterminado)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1210"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1231"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1254"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1275"/>
         <source>1080p (PS5 and PS4 Pro)</source>
         <translation>1080p (PS5 y PS4 Pro)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1252"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1296"/>
         <source>720p</source>
         <translation>720p</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1252"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1296"/>
         <source>1080p (Default)</source>
         <translation>1080p (Predeterminado)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1273"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1317"/>
         <source>1080p</source>
         <translation>1080p</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1293"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1337"/>
         <source>FPS:</source>
         <translation>FPS:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1299"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1317"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1335"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1353"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1343"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1361"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1379"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1397"/>
         <source>30 fps</source>
         <translation>30 fps</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1299"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1317"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1335"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1353"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1343"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1361"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1379"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1397"/>
         <source>60 fps (Default)</source>
         <translation>60 fps (Predeterminado)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1370"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1414"/>
         <source>Bitrate:</source>
         <translation>Tasa de bits:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1401"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1435"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1468"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1502"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1445"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1479"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1512"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1546"/>
         <source> Mbps</source>
         <translation>Mbps</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1401"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1435"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1468"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1502"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1445"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1479"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1512"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1546"/>
         <source> (%1 Mbps)</source>
         <translation>(%1 Mbps)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1508"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1552"/>
         <source>Codec:</source>
         <translation>Códec:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1516"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1516"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1542"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1542"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1560"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1560"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1586"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1586"/>
         <source>H264</source>
         <translation>H264</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1516"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1516"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1542"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1542"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1560"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1560"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1586"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1586"/>
         <source>H265 (Default)</source>
         <translation>H265 (Predeterminado)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1516"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1542"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1560"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1586"/>
         <source>H265 HDR</source>
         <translation>H265 HDR</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1598"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1642"/>
         <source>Output Device:</source>
         <translation>Dispositivo de salida:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1608"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1631"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1652"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1675"/>
         <source>Auto</source>
         <translation>Automático</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1622"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1666"/>
         <source>Input Device:</source>
         <translation>Dispositivo de entrada:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1646"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1690"/>
         <source>Audio Buffer Size:</source>
         <translation>Tamaño del búfer de audio:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1666"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1710"/>
         <source> ms</source>
         <translation>ms</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1673"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1717"/>
         <source>(50 ms)</source>
         <translation>(50 ms)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1678"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1722"/>
         <source>Audio Volume:</source>
         <translation>Volumen de audio:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1696"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1740"/>
         <source>% volume</source>
         <translation>% volumen</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1703"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1747"/>
         <source>(100%)</source>
         <translation>(100%)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1708"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1752"/>
         <source>Start Mic Unmuted:</source>
         <translation>Iniciar Micrófono Sin Silenciar:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1723"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1767"/>
         <source>Speech Processing:</source>
         <translation>Procesamiento de Voz:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1728"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1772"/>
         <source>Noise suppression + echo cancellation</source>
         <translation>Supresión de Ruido + Cancelación de Eco</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1742"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1786"/>
         <source>Noise To Suppress:</source>
         <translation>Ruido a Suprimir:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1761"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="1792"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1805"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1836"/>
         <source>%1 dB</source>
         <translation>%1 dB</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1767"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1811"/>
         <source>(6 dB)</source>
         <translation>(6 dB)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1773"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1817"/>
         <source>Echo To Suppress:</source>
         <translation>Eco a Suprimir:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1798"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1842"/>
         <source>(30 dB)</source>
         <translation>(30 dB)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1804"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1848"/>
         <source>Weak Wifi Notification:</source>
         <translation>Notificación de Wi-Fi Débil:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1821"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1865"/>
         <source>&gt;= %1% dropped packets</source>
         <translation>&gt;= %1% paquetes perdidos</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1827"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1871"/>
         <source>(3%)</source>
         <translation>(3%)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1832"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1876"/>
         <source>Packet Loss Reported Max:</source>
         <translation>Perdida Máxima de Paquetes Reportada:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1849"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1893"/>
         <source>%1% packet loss</source>
         <translation>%1% pérdida de paquetes</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1855"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1899"/>
         <source>(5%)</source>
         <translation>(5%)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1860"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1904"/>
         <source>Request IDR Frame on FEC Failure</source>
         <translation>Solicitar fotograma IDR en caso de fallo de FEC</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1875"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1919"/>
         <source>Show Stream Stats During Gameplay</source>
         <translation>Mostrar estadísticas de transmisión durante el juego</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1934"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1978"/>
         <source>Register New</source>
         <translation>Registrar Nuevo</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1942"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1986"/>
         <source>Registered Consoles</source>
         <translation>Consolas Registradas</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1979"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2023"/>
         <source>Auto-Connect</source>
         <translation>Conexión Automática</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2124"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2168"/>
         <source>Delete</source>
         <translation>Eliminar</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2125"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2169"/>
         <source>Delete Console</source>
         <translation>Eliminar Consola</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2125"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2169"/>
         <source>Are you sure you want to delete this console?</source>
         <translation>¿Estás seguro de que quieres eliminar esta consola?</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2135"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2179"/>
         <source>Hidden Consoles</source>
         <translation>Consolas Ocultas</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2207"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2251"/>
         <source>Unhide</source>
         <translation>Mostrar</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2208"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2252"/>
         <source>Unhide Console</source>
         <translation>Mostrar Consola</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2208"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2252"/>
         <source>Are you sure you want to unhide this console?</source>
         <translation>¿Estás seguro de que quieres mostrar esta consola?</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2258"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2302"/>
         <source>Reset All Keys</source>
         <translation>Restablecer todas las teclas</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2317"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2361"/>
         <source>Keyboard as controller</source>
         <translation>Teclado como controlador</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2389"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2433"/>
         <source>Enable Mouse Touchpad</source>
         <translation>Habilitar Touchpad del Ratón</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2592"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2636"/>
         <source>Change Controller Mapping</source>
         <translation>Cambiar la asignación del mando</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2600"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2644"/>
         <source>Reset Controller Mapping</source>
         <translation>Restablecer la asignación del mando</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2611"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2655"/>
         <source>Background Controller Events:</source>
         <translation>Eventos de Controlador en Fondo:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2615"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2659"/>
         <source>Process controller input when application is in background</source>
         <translation>Procesar entrada de controlador cuando la aplicación está en segundo plano</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2632"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2676"/>
         <source>Dpad Touchpad Emulation</source>
         <translation>Emulación de Touchpad para Dpad</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2663"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2707"/>
         <source>Dpad Touch Increment:</source>
         <translation>Incremento de Touchpad para Dpad:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2681"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2725"/>
         <source>%1 mm</source>
         <translation>%1 mm</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2696"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2740"/>
         <source>(0.3 mm)</source>
         <translation>(0,3 mm)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2705"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2749"/>
         <source>Dpad Regular/Touch Combo:</source>
         <translation>Dpad Regular/Touch Combo:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2786"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2830"/>
         <source>(L1+R1+dpad Up)</source>
         <translation>(L1+R1+dpad Arriba)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2794"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2838"/>
         <source>Buttons By Position:</source>
         <translation>Botones Por Posición:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2799"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2843"/>
         <source>Use buttons by position instead of by label</source>
         <translation>Usar botones por posición en lugar de por etiqueta</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2824"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2868"/>
         <source>Rumble Haptics:</source>
         <translation>Rumble Haptics:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1025"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="2830"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3138"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3199"/>
+        <source>About NitroPlay</source>
+        <translation>Acerca de NitroPlay</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/SettingsDialog.qml" line="3384"/>
+        <source>Choose a color</source>
+        <translation>Elige un color</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/SettingsDialog.qml" line="1069"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2874"/>
         <source>Off</source>
         <translation>Apagado</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2830"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2874"/>
         <source>Very Weak</source>
         <translation>Muy Débil</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2830"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2874"/>
         <source>Weak</source>
         <translation>Débil</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2830"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2874"/>
         <source>Normal</source>
         <translation>Normal</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2830"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2874"/>
         <source>Strong</source>
         <translation>Fuerte</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2830"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2874"/>
         <source>Very Strong</source>
         <translation>Muy Fuerte</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2837"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2881"/>
         <source>(Normal)</source>
         <translation>(Normal)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2845"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2889"/>
         <source>True Haptics Intensity:</source>
         <translation>Intensidad True Haptics:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2865"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2909"/>
         <source>console setting</source>
         <translation>configuración de consola</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2867"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2911"/>
         <source> % console setting</source>
         <translation>% configuración de consola</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2875"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2919"/>
         <source>(console setting)</source>
         <translation>(configuración de consola)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2916"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2960"/>
         <source>Login to PSN</source>
         <translation>Iniciar sesión en PSN</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2930"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2974"/>
         <source>Clear PSN Token</source>
         <translation>Borrar token de PSN</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2948"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2992"/>
         <source>Hole Punching Port Guessing:</source>
         <translation>Adivinanza de puerto Hole Punching:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2953"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="2997"/>
         <source>Force STUN port guessing</source>
         <translation>Forzar adivinanza de puerto STUN</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2965"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3009"/>
         <source>Port Guess Count:</source>
         <translation>Número de intentos de adivinanza de puerto:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2983"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3027"/>
         <source> guesses</source>
         <translation>intentos</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2990"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3034"/>
         <source>(75)</source>
         <translation>(75)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="2995"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3039"/>
         <source>Port Guess Socket Count:</source>
         <translation>Número de sockets de adivinanza de puerto:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3014"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3058"/>
         <source> sockets</source>
         <translation>sockets</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3020"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3064"/>
         <source>(250)</source>
         <translation>(250)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3058"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3102"/>
         <source>Current Profile: </source>
         <translation>Perfil actual:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3060"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3104"/>
         <source>Current Profile: default</source>
         <translation>Perfil actual: predeterminado</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3067"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3111"/>
         <source>Manage Profiles</source>
         <translation>Administrar perfiles</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3076"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3120"/>
         <source>Export settings to file</source>
         <translation>Exportar configuración a archivo</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3085"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3129"/>
         <source>Import settings from file</source>
         <translation>Importar configuración desde archivo</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3094"/>
-        <location filename="../src/qml/SettingsDialog.qml" line="3155"/>
-        <source>About %1-ng</source>
-        <translation>Acerca de %1-ng</translation>
-    </message>
-    <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3100"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3144"/>
         <source>Sanitize Logs (checked)</source>
         <translation>Sanitizar registros (marcado)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3106"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3150"/>
         <source>Verbose Logging (unchecked)</source>
         <translation>Registro detallado (no marcado)</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3203"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3247"/>
         <source>Key Capture</source>
         <translation>Captura de teclas</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3231"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3275"/>
         <source>Press any key to configure button or click close</source>
         <translation>Presiona cualquier tecla para configurar el botón o haz clic en cerrar</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3247"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3291"/>
         <source>Controller Capture</source>
         <translation>Captura de controlador</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3282"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3326"/>
         <source>Choose the controller by pressing any button on the controller</source>
         <translation>Elige el controlador presionando cualquier botón en él</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3292"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3336"/>
         <source>Controller Managed by Steam</source>
         <translation>Controlador gestionado por Steam</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="3311"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="3355"/>
         <source>This controller is managed by Steam.
 Please use Steam to map controller or disable Steam Input for the controller before mapping here.</source>
         <translation>Este controlador es gestionado por Steam.
 Por favor, usa Steam para mapear el controlador o desactiva la Entrada de Steam para el controlador antes de mapearlo aquí.</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1020"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1064"/>
         <source>Sharpening:</source>
         <translation>Nitidez:</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1025"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1069"/>
         <source>Low</source>
         <translation>Baja</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1025"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1069"/>
         <source>Medium</source>
         <translation>Media</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1025"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1069"/>
         <source>High</source>
         <translation>Alta</translation>
     </message>
     <message>
-        <location filename="../src/qml/SettingsDialog.qml" line="1032"/>
+        <location filename="../src/qml/SettingsDialog.qml" line="1076"/>
         <source>(Off)</source>
         <translation>(Apagada)</translation>
     </message>

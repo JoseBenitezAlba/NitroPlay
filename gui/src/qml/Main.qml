@@ -13,7 +13,7 @@ Item {
     readonly property bool preferSeparateStreamSettingsWindows: Chiaki.window.runtimeRendererBackend === 1 && Chiaki.session
     property bool useSeparateStreamSettingsWindows: false
     // Temas inspirados en PlayStation y sus juegos; se elige en Ajustes > General
-    readonly property var themes: ({
+    readonly property var baseThemes: ({
         "chiaki":   { name: qsTr("NitroPlay original"), accent: "#00a7ff", background: "#303030", primary: "#00a7ff" },
         "ps5":      { name: qsTr("PS5 clásico"),          accent: "#53b5ff", background: "#0b0d12", primary: "#17243a" },
         "ps4":      { name: qsTr("PS4"),                  accent: "#00a7ff", background: "#0a1f44", primary: "#2e6db4" },
@@ -57,11 +57,33 @@ Item {
         "wipeout":  { name: "WipEout",                      accent: "#ff3cac", background: "#090914", primary: "#2b1747" },
         "parappa":  { name: "PaRappa the Rapper",           accent: "#ffcf4a", background: "#1f1430", primary: "#4a2e6b" }
     })
-    readonly property var themeKeys: ["ps5", "ps4", "ps3", "ps2", "ps1", "spiderman", "gow", "horizon", "tlou", "ghost", "astro", "gt7", "ratchet", "returnal", "uncharted", "bloodborne", "demons", "stranding", "crash", "spyro", "mgs", "ff7", "tekken3", "shadow", "ico", "lbp", "infamous", "killzone", "sackboy", "jak", "sly", "daysgone", "detroit", "persona5", "re", "silenthill", "kh", "stellar", "helldivers", "wipeout", "parappa", "chiaki"]
+    readonly property var themeKeys: ["ps5", "ps4", "ps3", "ps2", "ps1", "spiderman", "gow", "horizon", "tlou", "ghost", "astro", "gt7", "ratchet", "returnal", "uncharted", "bloodborne", "demons", "stranding", "crash", "spyro", "mgs", "ff7", "tekken3", "shadow", "ico", "lbp", "infamous", "killzone", "sackboy", "jak", "sly", "daysgone", "detroit", "persona5", "re", "silenthill", "kh", "stellar", "helldivers", "wipeout", "parappa", "custom", "chiaki"]
     Settings {
         id: themeSettings
         category: "theme"
         property string current: "ps5"
+        // colores del tema «Personalizado», editables en Configuración > General
+        property string customAccent: "#53b5ff"
+        property string customBackground: "#0b0d12"
+        property string customPrimary: "#17243a"
+    }
+    // todos los temas: los de serie más el personalizado (se recalcula al cambiar sus colores)
+    readonly property var themes: Object.assign({
+        "custom": { name: qsTr("Custom"), accent: themeSettings.customAccent,
+                    background: themeSettings.customBackground, primary: themeSettings.customPrimary }
+    }, baseThemes)
+    function setCustomColor(role, color) {
+        const valor = String(color);
+        if (themeSettings.current !== "custom") {
+            // partir del tema que está puesto, para cambiar solo el color elegido
+            themeSettings.customAccent = String(currentTheme.accent);
+            themeSettings.customBackground = String(currentTheme.background);
+            themeSettings.customPrimary = String(currentTheme.primary);
+        }
+        if (role === "accent") themeSettings.customAccent = valor;
+        else if (role === "background") themeSettings.customBackground = valor;
+        else if (role === "primary") themeSettings.customPrimary = valor;
+        themeSettings.current = "custom";
     }
     readonly property string currentThemeKey: themes[themeSettings.current] ? themeSettings.current : "ps5"
     readonly property var currentTheme: themes[currentThemeKey]

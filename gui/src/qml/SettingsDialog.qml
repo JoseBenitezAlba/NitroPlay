@@ -523,6 +523,50 @@ DialogView {
 
                         Label {
                             Layout.alignment: Qt.AlignRight
+                            text: qsTr("Theme colors:")
+                        }
+
+                        RowLayout {
+                            spacing: 8
+                            Repeater {
+                                model: [
+                                    { role: "accent", label: qsTr("Accent") },
+                                    { role: "background", label: qsTr("Background") },
+                                    { role: "primary", label: qsTr("Primary") }
+                                ]
+                                delegate: C.Button {
+                                    required property var modelData
+                                    text: modelData.label
+                                    Layout.preferredWidth: 128
+                                    Material.roundedScale: Material.SmallScale
+                                    icon.source: ""
+                                    contentItem: RowLayout {
+                                        spacing: 6
+                                        Rectangle {
+                                            Layout.preferredWidth: 18
+                                            Layout.preferredHeight: 18
+                                            radius: 4
+                                            border.color: "#80ffffff"
+                                            color: root.currentTheme[modelData.role]
+                                        }
+                                        Label { text: modelData.label }
+                                    }
+                                    onClicked: {
+                                        themeColorDialog.role = modelData.role;
+                                        themeColorDialog.selectedColor = root.currentTheme[modelData.role];
+                                        themeColorDialog.open();
+                                    }
+                                }
+                            }
+                        }
+
+                        Label {
+                            Layout.alignment: Qt.AlignRight
+                            text: qsTr("(saved as Custom)")
+                        }
+
+                        Label {
+                            Layout.alignment: Qt.AlignRight
                             text: qsTr("Steam Deck Haptics:")
                             visible: (typeof Chiaki.settings.steamDeckHaptics !== "undefined")
                         }
@@ -3091,7 +3135,7 @@ DialogView {
 
                     C.Button {
                         id: aboutButton
-                        text: qsTr("About %1-ng").arg(Qt.application.name)
+                        text: qsTr("About NitroPlay")
                         onClicked: aboutDialog.open()
                         Material.roundedScale: Material.SmallScale
                     }
@@ -3152,7 +3196,7 @@ DialogView {
             parent: Overlay.overlay
             x: Math.round((root.width - width) / 2)
             y: Math.round((root.height - height) / 2)
-            title: qsTr("About %1-ng").arg(Qt.application.name)
+            title: qsTr("About NitroPlay")
             modal: true
             standardButtons: Dialog.Ok
             Material.roundedScale: Material.MediumScale
@@ -3332,5 +3376,12 @@ DialogView {
                 steamControllerMappingDialog.open();
             }
         }
+    }
+
+    ColorDialog {
+        id: themeColorDialog
+        property string role: "accent"
+        title: qsTr("Choose a color")
+        onAccepted: root.setCustomColor(themeColorDialog.role, themeColorDialog.selectedColor)
     }
 }
